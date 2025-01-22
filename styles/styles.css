@@ -10,6 +10,19 @@ nav a {
 main {
     max-width: 840px;
 }
+h1 {
+    color: darkblue;
+}
+main img {
+width: 200px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
+p{
+    padding: 0;
+}
 aside {
     width: 20rem;
     margin: 1rem;
@@ -26,19 +39,6 @@ aside {
     background-color: #eee;
     color: #333;
     text-align: center;
-}
-h1 {
-    color: darkblue;
-}
-p{
-    padding: 0;
-}
-main img {
-    width: 200px;
-    height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
 }
 aside img {
     width: 200px;
