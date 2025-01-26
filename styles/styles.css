@@ -1,4 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 :root{
+    --margin: 1rem;
+    --padding: 1rem;
     --width: 200px;
     --height: auto;
     --text-align: center;
@@ -19,7 +26,9 @@ h1 {
     color: darkblue;
 }
 main img {
-    width: var(--width);
+    float: right;
+    margin: var(--margin);
+    width: 150px;
     height: var(--height);
     border: 1px solid black;
     padding: 2px;
@@ -29,28 +38,32 @@ p{
     padding: 0;
 }
 aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);/*1️⃣*/ /*1️⃣ The border color uses the preferred rgb color method in order 
-    to take advantage of a subtle, transparent border effect. 
-    The RGB value consists of four values: red, green, blue, and alpha. 
-    The first three values (0, 0, 0) represent black, and the last value (.2) represents the alpha or opacity of the color.
-    An alpha value of .2 means that the color is mostly transparent, allowing the background to show through.
-    By using this border color, the border appears very light and barely noticeable, 
-    while still providing a subtle visual cue that helps to separate elements on a webpage. 
-    Additionally, it can help to add a layer of visual interest 
-    to the design without being overly distracting or detracting from the overall layout.*/
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    width: 20em;
     text-align: var(--text-align);
+    position: relative;
 }
 aside img {
     width: var(--width);
     height: var(--height);
 }
+aside h2 {
+    position: absolute;
+    top: 25px;
+    left: 155px;
+}
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: var(--text-align);
+    clear: both; 
+}
+
+/*Class Selectors*/
+
+.box {
+    margin: var(--margin);
+    border: 1px solid rgb(0 0 0 / .1);
+    padding: var(--padding);
+    background-color: #ddd;
+    color: #000;
 }
