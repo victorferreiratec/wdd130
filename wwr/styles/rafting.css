@@ -101,6 +101,8 @@ padding: 0.5rem;
 }
 
 .purpose h2 {
+font-style: italic;
+color: #000;
 margin: 0;
 padding-left: 1rem;
 }
