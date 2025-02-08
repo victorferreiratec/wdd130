@@ -12,6 +12,9 @@ box-sizing: border-box;
 
 /* Header Styles */
 header {
+margin: 1rem auto;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
 background-color: var(--primary-color); /* Primary Color */
 color: var(--accent1-color);
 padding: 0 1rem;
