@@ -55,7 +55,7 @@ body {
 font-family: "Lora", serif;
 margin: 0 auto;
 padding: 0;
-width: 1500px;
+width: 1350px;
 }
 
 
@@ -145,7 +145,7 @@ margin: 1rem;
 text-align: center;
 grid-column: span 3;
 font-size: xx-large;
-color: #0854e2dc;
+color: #000;
 padding: 0;
 }
 
