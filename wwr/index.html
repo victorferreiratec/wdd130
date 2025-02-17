@@ -1,56 +1,89 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Victor Hugo Dos Santos Ferreira | WDD 130 | BYU - Assigments">
-    <meta name="author" content="Victor Hugo Dos Santos Ferreira">
-    <title>Victor Hugo Dos Santos Ferreira | WDD 130</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience the ultimate adrenaline rush!  Book your whitewater rafting adventure today and conquer the rapids. Explore stunning rivers and create unforgettable memories.">
+    <meta name="author" content="Victor Hugo Ferreira">
+    <meta property="og:image" content="https://victorferreiratec.github.io/wdd130/blob/main/wwr/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <title>Splash White Water Rafting</title>
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html" target="_blank">Rafting Website</a>
-            <a href="https://www.linkedin.com/feed/" target="_blank">Linkedin</a>
-            <a href="https://www.instagram.com/victorr_h.ferreira/" target="_blank">Instagram</a>
+        <img src="images/logo.png" alt="logo">
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a> 
         </nav>
     </header>
     <main>
-        <h1>Victor Hugo Dos Santos Ferreira | WDD 130</h1>
-        <img src="images_index/profile.jpg" alt ="Hello, my name is Victor Hugo Dos Santos Ferreira" width="200">
-        <p>Hello, my name is Victor Hugo Dos Santos Ferreira, i'm from Sergipe, Brazil. 
-        I like watching movies with my wife, I love going to the beach 
-        and I really like sports, especially football and volleyball.
-        I served in the Brazil São Paulo North mission, which was an incredible moment in my life. 
-        Now as a student at BYU-Idaho in the "web fundamentals" course,
-        I hope to develop and grow professionally. 
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic enim quas 
-        eum quidem totam, natus quod voluptatem sint alias accusantium cupiditate
-        accusamus, soluta explicabo dicta provident, minus mollitia quaerat iure.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed quo, quia vero obcaecati 
-        et sit blanditiis itaque ut asperiores similique!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
-        quaerat accusamus iure dignissimos natus quis? Inventore consequuntur architecto iure libero?
-        Ipsum maiores sint cum sequi id, asperiores aspernatur distinctio ad fugit ratione quod.
-        Labore, iusto debitis? Quam recusandae repellendus eaque, qui facilis eius quia optio obcaecati tenetur facere temporibus earum?</p>
-        
-        <ul class="box">
-            <li><a href="https://www.churchofjesuschrist.org/temples/details/recife-brazil-temple?lang=eng" target="_blank">Recife Temple</a></li>
-            <li><a href="https://www.churchofjesuschrist.org/temples/details/sao-paulo-brazil-temple?lang=eng" target="_blank">Sao Paulo Temple</a></li>
-            <li><a href="https://www.churchofjesuschrist.org/temples/details/manaus-brazil-temple?lang=eng" target="_blank">Manaus Temple</a></li>
-        </ul>
+        <section class="hero">
+            <img src="images/hero_home.jpg" alt="Whitewater Rafting Adventure">
+            <div class="hero-content">
+                <h1>Beat the rapids. Long live the adrenaline.</h1>
+            </div>
+        </section>
+    
+        <section id="newsletter">
+            <h2>Stay Updated! Sign Up for Our Newsletter</h2>
+            <form action="#">
+                <label for="fullname">Full Name: <span class="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <label for="useremail">Email: <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <button type="submit">Subscribe Now</button>
+            </form>
+        </section>
+    
+        <section id="call-to-action" class="hero">
+            <img src="images/emotion.jpg" alt="">
+            <div class="hero-content">
+                <h2>Ready for an unforgettable experience?</h2>
+                <a href="trips.html" class="cta-button">Explore Our Trips</a>
+            </div>
+        </section>
+    
+        <section id="about-us">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="images/discover_the_wild.jpg" alt="Scenic River">
+                    <h3>Discover the Wild</h3>
+                    <p>Uncover the power of rivers in beautiful nature. Our trips take you through stunning landscapes, offering a unique opportunity to connect with nature and have the thrill of overcoming rapids.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/our_love_for_rafting.jpg" alt="Rafting Fun">
+                    <h3>Our Love for Rafting</h3>
+                    <p>We are passionate about the river and experts in rafting. Our mission is to share this passion by providing safe and exciting adventures for all experience levels.</p>
+                </div>
+              <div class="grid-item">
+                    <img src="images/enjoy_with_adventure.jpg" alt="Safety Gear" id="gear-image">
+                    <h3>Enjoy with Adventure</h3>
+                    <p>Relax and enjoy the adventure! Your safety is our top priority. We provide full equipment and our experienced guides are certified in first aid and river rescue, ensuring an exciting and safe experience.</p>
+                </div>
+            </div>
+        </section>
     </main>
-    <aside class="box">
-        <h2>Sergipe</h2>
-        <img src="images_index/atalaia-aracaju.jpg" alt="Orla de Atalaia de Aracaju" width="200">
-        <p>Here in Sergipe has beautiful and wonderful beaches, I really like the beauty of my state, especially the coast of Atalaia, which is the most visited place in my state.</p>
-    </aside>
     <footer>
-        <p>©2025 🌴 Victor Hugo Dos Santos Ferreira 🌴 Brazil</p>
-    </footer>  
+        <a href="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=wireframe_contactus.drawio.html&dark=auto#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1Erfcb_r_nDOuhqB3yP_m-jo1JjEMKe7M%26export%3Ddownload" id="wireframe-page">WIREFRAME</a>
+        <p>©2025 🌴 Spalsh White Water Rafting 🌴 Victor Ferreira</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook_icon.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter_icon.png" alt="Twitter">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram_icon.png" alt="Instagram">
+            </a>
+            <a href="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Contact-us--page-wireframe#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D19KN7fwAbiUVKrNZmQCP5r7UkirEEbePo%26export%3Ddownload"></a>
+        </nav>
+    </footer>
 </body>
-<!--Last update 01/25/2025-->
 </html>
